@@ -29,10 +29,6 @@ public class ChivitaSong {
         animales.add("el mono");
         animales.add("el dinosaurio");
 
-        for(int i=0; i < 10; i++) {
-            int numero = (int)(Math.random()*5);
-        }
-
         Map<String, String> llamarA = new HashMap<>();
 
         System.out.println("Sal de ahí chivita chivita, sal de ahí de ese lugar");
