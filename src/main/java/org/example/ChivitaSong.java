@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ChivitaSong {
     public static void main(String[] args) {
@@ -40,10 +37,12 @@ public class ChivitaSong {
 
         String inspeccionar = "la chiva";
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 15; i++) {
 
-            int numero = (int)(Math.random()*15);
-            String prox = animales.get(numero);
+            Set<String> animalesConjunto = new HashSet<>();
+            Set<String> animalesUtilizados = new HashSet<>();
+
+            String prox = animales.get(count);
             llamarA.put(actualmente, prox);
             System.out.println("Hay que llamar a " + prox + " para que saque a " + actualmente);
             actualmente = prox;
