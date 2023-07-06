@@ -9,22 +9,22 @@ public class ChivitaSong {
 
     private static void myChivaSong() {
 
-        List<String> animales = new ArrayList<>();
-        animales.add("el loro");
-        animales.add("el gato");
-        animales.add("el perro");
-        animales.add("el lobo");
-        animales.add("el chancho");
-        animales.add("la vaca");
-        animales.add("el caballo");
-        animales.add("el rinoceronte");
-        animales.add("el jaguar");
-        animales.add("el leon");
-        animales.add("el elefante");
-        animales.add("el raton");
-        animales.add("el tigre");
-        animales.add("el mono");
-        animales.add("el dinosaurio");
+        Stack<String> animales = new Stack<>();
+        animales.push("el loro");
+        animales.push("el gato");
+        animales.push("el perro");
+        animales.push("el lobo");
+        animales.push("el chancho");
+        animales.push("la vaca");
+        animales.push("el caballo");
+        animales.push("el rinoceronte");
+        animales.push("el jaguar");
+        animales.push("el leon");
+        animales.push("el elefante");
+        animales.push("el raton");
+        animales.push("el tigre");
+        animales.push("el mono");
+        animales.push("el dinosaurio");
 
         Map<String, String> llamarA = new HashMap<>();
 
@@ -38,9 +38,6 @@ public class ChivitaSong {
         String inspeccionar = "la chiva";
 
         for (int i = 0; i < 15; i++) {
-
-            Set<String> animalesConjunto = new HashSet<>();
-            Set<String> animalesUtilizados = new HashSet<>();
 
             String prox = animales.get(count);
             llamarA.put(actualmente, prox);
@@ -59,7 +56,5 @@ public class ChivitaSong {
             System.out.println("La chiva no quiere salir de ahí. Sal de ahí chivita chivita. Sal de ahí de ese lugar");
             count++;
         }
-
-
     }
 }
